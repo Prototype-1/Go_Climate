@@ -24,7 +24,7 @@ type OpenWeatherResponse struct {
 }
 
 func fetchWeatherData(city string) WeatherData {
-	apiKey := "07c9b2a9efcbdf73902a144c16cf89e0" 
+	apiKey := "" 
 		apiURL := fmt.Sprintf("https://api.openweathermap.org/data/2.5/weather?q=%s&units=metric&appid=%s", city, apiKey)
 	
 		client := http.Client{Timeout: 10 * time.Second}
